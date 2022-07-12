@@ -68,7 +68,8 @@ fn main() {
         
     }
 
-    img.save("image.png").unwrap();
+    img.save(format!("mandelbrot_{}x{}_{} iters_ RGB({}, {}, {}).png", 
+                        size, size, iteration, color.0, color.1, color.2)).unwrap();
 }
 
 fn mandelbrot(x: f32, y: f32, iter_num: i32) -> i32 {
