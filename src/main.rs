@@ -68,7 +68,7 @@ fn main() {
         
     }
 
-    img.save(format!("mandelbrot_{}x{}_{} iters_ RGB({}, {}, {}).png", 
+    img.save(format!("mandelbrot_{}x{}_{} iters_RGB({}, {}, {}).png", 
                         size, size, iteration, color.0, color.1, color.2)).unwrap();
 }
 
